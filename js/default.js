@@ -71,7 +71,7 @@ var current_time=new Date();
 setCookie('lastDate',current_time.toString(),7);
 
 document.getElementById('remove_cookie').onsubmit=function(){
-  setCookie("lastData","",0);
+  setCookie('lastDate',"",0);
 }
 
 var thmubs=document.querySelectorAll('.thumb');
