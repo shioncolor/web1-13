@@ -38,12 +38,12 @@ function getCookie(c_name){
   var st="";
   var ed="";
   
-  if(0<doument.cookie.length){
-  st=doument.cookie.indexOf(c_name+"=");
+  if(0<document.cookie.length){
+  st=document.cookie.indexOf(c_name+"=");
    if(st!=1){
      st=st+c_name.length+1
-   ed=doument.cookie.indexOf(";",st);
-   if(ed==1) ed=doument.cookie.length;
+   ed=document.cookie.indexOf(";",st);
+   if(ed==1) ed=document.cookie.length;
      
      return unescape(doument.cookie.substring(st,ed))
    } 
@@ -51,20 +51,20 @@ function getCookie(c_name){
   return "";
 }
 
-doument.getElementById('form').select.onchange=function(){
+document.getElementById('form').select.onchange=function(){
 location.href=getElementById('form').select.value;
 }
 
 var last_date=getCookie('lastDate');
 if(last_data){
-doument.getElementById('cookie').textCountent='前回訪れた時間'+last_data:
+document.getElementById('cookie').textCountent='前回訪れた時間'+last_data:
 }else{
-  doument.getElementById('cookie').textCountent='初めまして';
+  document.getElementById('cookie').textCountent='初めまして';
 }
 
 var current?time=new Data();
 setCookie('lastData',current_time.toString(),7);
 
-doument.getElementById('remove_cookie').onsubmit=function(){
+document.getElementById('remove_cookie').onsubmit=function(){
   setCookie("lastData","",0);
 }
