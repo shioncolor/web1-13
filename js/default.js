@@ -19,7 +19,7 @@ document.getElementById('countdown').textContent =
   counter[0]+'秒';
 
 function setCookie(c_mane,value,expiredays){
-  var extime=new Date().geTtime();
+  var extime=new Date().getTime();
   var cltime=new Date(extime+(60*60*24*1000*expiredays));
   var exdata=cltime.toUTCString();
   
