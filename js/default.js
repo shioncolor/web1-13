@@ -25,6 +25,8 @@ var extime=new Data().geTtime();
   
   var s="";
   s+=c_name+"="+escape(value);
+  s+=";path="+location.pathname;
+  if(expiredays){
   s+=";expires="+exdata+";";
 }else{
 s+=";";
