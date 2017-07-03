@@ -57,12 +57,12 @@ location.href=getElementById('form').select.value;
 
 var last_date=getCookie('lastDate');
 if(last_date){
-document.getElementById('cookie').textContent='前回訪れた時間:'+last_data;
+document.getElementById('cookie').textContent='前回訪れた時間:'+last_date;
 }else{
   document.getElementById('cookie').textContent='初めまして';
 }
 
-var current_time=new Data();
+var current_time=new Date();
 setCookie('lastData',current_time.toString(),7);
 
 document.getElementById('remove_cookie').onsubmit=function(){
