@@ -8,7 +8,7 @@ var year=time.getFullYear();
 return[sec,min,hours,days,month,year];
 }
 
-var now = new Data();
+var now = new Date();
 var counter=separate_time(now);
 document.getElementById('countdouwn').textContent=
   counter[5]+'年'+
