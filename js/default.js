@@ -62,3 +62,7 @@ doument.getElementById('cookie').textCountent='前回訪れた時間'+last_data:
 
 var current?time=new Data();
 setCookie('lastData',current_time.toString(),7);
+
+doument.getElementById('remove_cookie').onsubmit=function(){
+  setCookie("lastData","",0);
+}
