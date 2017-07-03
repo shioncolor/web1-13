@@ -21,3 +21,13 @@ counter[0]+'秒';
 doument.getElementById('form').select.onchange=function(){
 location.href=getElementById('form').select.value;
 }
+
+var last_date=getCookie('lastDate');
+if(last_data){
+doument.getElementById('cookie').textCountent='前回訪れた時間'+last_data:
+}else{
+  doument.getElementById('cookie').textCountent='初めまして';
+}
+
+var current?time=new Data();
+setCookie('lastData',current_time.toString(),7);
