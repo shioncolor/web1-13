@@ -17,3 +17,7 @@ counter[3]+'日'+
 counter[2]+'時'+
 counter[1]+'分'+
 counter[0]+'秒';
+
+doument.getElementById('form').select.onchange=function(){
+location.href=getElementById('form').select.value;
+}
