@@ -81,11 +81,6 @@ for(idx in thmubs){
   }
 }
 
-document.getElementById('form').select.onchange=function(){
-location.href=document.getElementById('form').select.value;
-}
-
-
 function getFileName()
 {
 return window.location.href.split('/').pop();
@@ -102,3 +97,8 @@ opt=document.querySelector('option[value="other2.html"]');
   opt=document.querySelector('option[value="index.html"]');
 }
 opt.selected=true;
+
+document.getElementById('form').select.onchange=function(){
+location.href=document.getElementById('form').select.value;
+}
+
