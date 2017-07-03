@@ -26,7 +26,7 @@ setTimeout(update,1000);
 }
 update();
 
-function setCookie(c_mane,value,expiredays){
+function setCookie(c_name,value,expiredays){
   var extime=new Date().getTime();
   var cltime=new Date(extime+(60*60*24*1000*expiredays));
   var exdate=cltime.toUTCString();
@@ -34,6 +34,7 @@ function setCookie(c_mane,value,expiredays){
   var s="";
   
   s+=c_name+"="+escape(value);
+  
   s+=";path="+location.pathname;
   if(expiredays){
   s+=";expires="+exdata+";";
