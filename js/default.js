@@ -4,7 +4,7 @@ var min=time.getMinutes();
 var hours=time.getHours();
 var days=time.getDate();
 var mont=time.getMonth();
-ver year=time.getFullYear();
+var year=time.getFullYear();
 return[sec,min,hours,days,month,year];
 }
 
