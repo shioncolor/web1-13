@@ -53,7 +53,7 @@ function getCookie(c_name){
 }
 
 document.getElementById('form').select.onchange=function(){
-location.href=getElementById('form').select.value;
+location.href=document.getElementById('form').select.value;
 }
 
 var last_date=getCookie('lastDate');
