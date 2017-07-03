@@ -10,7 +10,7 @@ return[sec,min,hours,days,month,year];
 
 var now = new Date();
 var counter=separate_time(now);
-document.getElementById('countdouwn').textContent=
+document.getElementById('countdouwn').textContent =
   counter[5]+'年'+
   counter[4]+'月'+
   counter[3]+'日'+
