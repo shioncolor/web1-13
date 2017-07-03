@@ -8,8 +8,11 @@ var year=time.getFullYear();
 return[sec,min,hours,days,month,year];
 }
 
+var updata=function(){
 var now = new Date();
-var counter=separate_time(now);
+  var target=new Date(2020,7,24,0,0,0,0);
+  var diff = target.getTime()-now.getTime();
+var counter=separate_time(diff);
 document.getElementById('countdown').textContent =
   counter[5]+'年'+
   counter[4]+'月'+
@@ -17,13 +20,23 @@ document.getElementById('countdown').textContent =
   counter[2]+'時'+
   counter[1]+'分'+
   counter[0]+'秒';
+refresh();
+}
+
+var refresh=function()
+{
+setTimeout(updata,1000);
+}
+update();
+
 
 function setCookie(c_mane,value,expiredays){
   var extime=new Date().getTime();
   var cltime=new Date(extime+(60*60*24*1000*expiredays));
-  var exdata=cltime.toUTCString();
+  var exdate=cltime.toUTCString();
   
   var s="";
+  
   s+=c_name+"="+escape(value);
   s+=";path="+location.pathname;
   if(expiredays){
@@ -63,7 +76,7 @@ document.getElementById('cookie').textContent='前回訪れた時間:'+last_date
 }
 
 var current_time=new Date();
-setCookie('lastData',current_time.toString(),7);
+setCookie('lastDate',current_time.toString(),7);
 
 document.getElementById('remove_cookie').onsubmit=function(){
   setCookie("lastData","",0);
