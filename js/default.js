@@ -56,13 +56,13 @@ location.href=getElementById('form').select.value;
 }
 
 var last_date=getCookie('lastDate');
-if(last_data){
-document.getElementById('cookie').textCountent='前回訪れた時間'+last_data:
+if(last_date){
+document.getElementById('cookie').textContent='前回訪れた時間:'+last_data:
 }else{
-  document.getElementById('cookie').textCountent='初めまして';
+  document.getElementById('cookie').textContent='初めまして';
 }
 
-var current?time=new Data();
+var current_time=new Data();
 setCookie('lastData',current_time.toString(),7);
 
 document.getElementById('remove_cookie').onsubmit=function(){
